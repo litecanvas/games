@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Connect Four - Litecanvas</title>
+        <link rel="stylesheet" href="../../common/style.css" />
+    </head>
+    <body>
+        <main>
+            <div id="game">
+                <canvas></canvas>
+            </div>
+
+            <section id="description">
+                <h1>Connect Four</h1>
+
+                <h2>Rules</h2>
+                <p>
+                    Drop pieces on the board to reach four in a row vertically,
+                    horizontally, or diagonally.
+                </p>
+                <p>
+                    Player 1 is red, player 2 is yellow. Turns alternate between
+                    players after a piece is dropped on the board.
+                </p>
+
+                <h2>Controls (desktop only)</h2>
+                <ul>
+                    <li><kbd>Down Arrow</kbd> Drop piece</li>
+                    <li><kbd>Left/right arrow</kbd> Change drop position.</li>
+                    <li>
+                        <kbd>R</kbd>Play again/Restart game (Only on Win/Draw
+                        screen)
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <script src="../../common/litecanvas.js"></script>
+        <script src="graphics.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>

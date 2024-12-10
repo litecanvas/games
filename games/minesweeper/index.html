@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper - Litecanvas</title>
+    <link rel="stylesheet" href="../../common/style.css" />
+</head>
+
+<body>
+    <main>
+        <div id="game">
+            <canvas></canvas>
+        </div>
+
+        <section id="description">
+            <h1>Minesweeper</h1>
+
+            <h2>Rules</h2>
+            <p>
+                To win, you must uncover all safe squares without clicking on a mine.
+            </p>
+            <p>
+                The game board is a grid of squares. Some squares contain hidden mines, and the rest are safe. You can click (or tap) a square to reveal what’s underneath. If the square contains a mine, the game is
+                over. If the square is safe, it will display a number or be blank. The number shows how many mines are
+                in the surrounding eight tiles. 
+            </p>
+
+            <h2>Controls (desktop only)</h2>
+            <ul>
+                <li><kbd>Short Click</kbd>Reveals a square</li>
+                <li><kbd>Long Click</kbd>Places a flag</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../../common/litecanvas.js"></script>
+    <script src="event.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
